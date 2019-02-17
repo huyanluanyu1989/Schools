@@ -1,0 +1,54 @@
+.navWp {
+    background: #fff;
+    padding: 20px 0;
+    .schoolNav {
+        width: 1180px;
+        height: 68px;
+        display: flex;
+        align-items: center;
+        background-color: #EFF7F7;
+        border-radius: 10px;
+        padding: 24px 34px;
+        margin: 0 auto;
+        a:hover {
+            color: #02c7c7;
+        }
+        a {
+            position: relative;
+            font-size: 14px;
+            line-height: 14px;
+            color: #999;
+            margin-right: 40px;
+        }
+        a:last-child {
+            background-color: #fff;
+            padding: 10px 8px;
+        }
+
+        a:not(:first-of-type)::before {
+            position: absolute;
+            left: -25px;
+            top: 50%;
+            margin-top: -6.5px;
+            content: '';
+            display: block;
+            background: url("../../../../../static/images/icons/arrow.png") center no-repeat;
+            background-size: 9px 13px;
+            width: 9px;
+            height: 13px;
+        }
+        a:not(:first-of-type):last-child::before {
+            position: absolute;
+            left: -25px;
+            top: 50%;
+            margin-top: -6.5px;
+            content: '';
+            display: block;
+            background: url("../../../../../static/images/icons/arrowCur.png") center no-repeat;
+            background-size: 9px 13px;
+            width: 9px;
+            height: 13px;
+        }
+    }
+
+}

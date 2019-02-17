@@ -1,0 +1,221 @@
+
+.addBtn {
+    width: 89px;
+    height: 116px;
+    margin: 62px auto;
+    background: url("../../../../../static/images/icons/add.png") left top no-repeat;
+    background-size: 89px 80px;
+    font-size: 14px;
+    text-align: center;
+    color: #999;
+    line-height: 200px;
+    cursor: pointer;
+}
+
+.addBtn:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+.addBtnHasKit{
+    width: 158px;
+    height: 40px;
+    background: #03b3b3;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 50%;
+    margin-left: -79px;
+    line-height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 20px 20px 0 0;
+}
+.addBtnHasKit:hover{
+    background-color: #02c7c7;
+}
+.resWrapper {
+    margin: 30px 0 30px 30px;
+    height: 170px;
+    overflow-y: auto;
+    .moduleCard {
+        border: none;
+    }
+    .moduleCard:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+
+.moduleCard {
+    :global {
+        .mic-Image {
+            width: 42px;
+            height: 42px;
+            margin: 0 20px 0 0;
+            float: left;
+        }
+    }
+    span {
+        width: 30px;
+        font-size: 12px;
+        text-align: center;
+    }
+    display: flex;
+    align-items: center;
+    .btnDel {
+        margin-left: 15px;
+        width: 16px;
+        height: 16px;
+        background-color: #aaaaaa;
+        border-radius: 100%;
+        display: inline-block;
+        font-size: 0;
+        position: relative;
+        cursor: pointer;
+
+    }
+    .btnDel::before {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 2px;
+        top: 7px;
+        left: 4px;
+        display: block;
+        background-color: #fff;
+    }
+    .btnAdd:hover, .btnDel:hover {
+        background-color: #03b3b3;
+    }
+
+    .btnAdd {
+        cursor: pointer;
+        position: relative;
+        box-sizing: border-box;
+        width: 16px;
+        height: 16px;
+        background-color: #aaaaaa;
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .btnAdd:before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        left: 50%;
+        top: 50%;
+        margin-left: -5px;
+        margin-top: -1px;
+        background-color: #fff;
+    }
+    .btnAdd:after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 10px;
+        left: 50%;
+        top: 50%;
+        margin-left: -1px;
+        margin-top: -5px;
+        background-color: #fff;
+    }
+
+    p {
+        display: inline-block;
+        height: 100%;
+        width: 100px;
+        float: left;
+        line-height: 70px;
+        font-size: 14px;
+        color: #333;
+        margin: 0;
+    }
+    font-size: 14px;
+    color: #666;
+    width: 50%;
+    height: 70px;
+    line-height: 70px;
+    float: left;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+
+
+:global {
+    .Modules {
+        .modalForm {
+            background-color: #fff;
+            overflow: hidden;
+            border-radius: 5px;
+            position: fixed;
+            margin-left: 50%;
+            z-index: 9999999;
+            .content{
+                padding: 0 !important;
+            }
+        }
+    }
+
+}
+
+
+.mainWrapper {
+    border: 1px solid #ddd;
+    width: 870px;
+    height: 350px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 0 auto;
+}
+
+.kitWrapper {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 100%;
+    float: left;
+    width: 320px;
+    overflow-y: auto;
+    background-color: #f6f6f6;
+    button {
+        font-size: 14px;
+        color: #333;
+        height: 46px;
+        line-height: 46px;
+        padding: 0 18px;
+        display: block;
+        cursor: pointer;
+        background: transparent;
+        width: 100%;
+    }
+
+    button:hover, button.active, button:active {
+        background-color: #fff;
+    }
+}
+
+.moduleWrapper {
+    overflow-y: auto;
+    height: 100%;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    float: left;
+    width: 510px;
+    padding: 0 20px !important;
+
+}
+
+
+
+.search {
+    width: 500px;
+    margin: 0 auto 10px auto;
+}
+
+
+
+

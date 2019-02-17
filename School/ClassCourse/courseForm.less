@@ -1,0 +1,103 @@
+.courseForm {
+    padding: 36px 0;
+    .clearFix{
+        display: flex;
+    }
+    .coverImg{
+        display:flex;
+        align-items: flex-end;
+        >div:nth-child(2){
+            position: relative;
+            >img{
+                vertical-align: bottom!important;
+                border-radius: 4px;
+                width:140px;
+                margin:10px;
+            }
+            >div:nth-child(2){
+                background: rgba(0,0,0,.5);
+                position: absolute;
+                left: 10px;
+                bottom:10px;
+                border-radius: 4px;
+                width:140px;
+                height:79px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                >img{
+                    width:40px;
+                }
+            }
+        }
+    }
+    > div {
+        width: 1180px;
+        background: #fff;
+        padding: 40px;
+        margin: 0 auto;
+        :global {
+            .formItem {
+                .left {
+                    display: none;
+                }
+            }
+        }
+        .title {
+            margin: 0;
+            font-size: 20px;
+            line-height: 20px;
+            color: #666666;
+        }
+        .left {
+            width: 480px;
+            margin-right: 20px;
+            float: left;
+            textarea {
+                height: 108px;
+            }
+
+            .checkAgeWp {
+                display: table;
+                .title {
+                    display: table-cell;
+                    padding-right: 10px;
+                }
+            }
+
+            .AgeWp {
+                display: table;
+                margin-bottom: 20px;
+                > span {
+                    margin: 0 10px;
+                    font-size: 14px;
+                    color: #666666;
+                }
+                :global {
+                    .formItem {
+                        display: table-cell;
+                        width: 70px;
+                    }
+                }
+            }
+        }
+        .right {
+            float: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+            .btnWP {
+                float: right;
+                .cancle{
+                    margin-left:20px;
+                    button{
+                        background: #fff;
+                        color:#03B3B3;
+                    }
+                }
+
+            }
+        }
+    }
+}

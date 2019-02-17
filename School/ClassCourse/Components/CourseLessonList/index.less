@@ -1,0 +1,70 @@
+.list {
+    margin-top:30px;
+    :global {
+        .mic-Button {
+            border: none;
+            &.edit, &.del {
+                .mic-btn {
+                    width: 60px;
+                    height: 32px;
+                    border-radius: 4px;
+                    padding: 6px 16px;
+                }
+
+            }
+            &.edit {
+                .mic-btn {
+                    color: #03B3B3;
+                    background: #CCF1F3;
+                }
+            }
+            &.del {
+                .mic-btn {
+                    color: #FF5858;
+                    background: #FFE3E3;
+                }
+            }
+        }
+    }
+    margin-bottom: 38px;
+
+    .del {
+        color: #FF5858;
+    }
+    ul {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+        &:first-child{
+            border-top:1px solid #E2E2E2;
+        }
+        &:last-child{
+            li:first-child {
+                border-bottom: 1px solid #E2E2E2;
+            }
+        }
+        li {
+            padding: 27px 0;
+            display: flex;
+            align-items: center;
+        }
+        li:first-child {
+            width: 85px;
+            justify-content: center;
+            border-left:1px solid #E2E2E2;
+            font-size: 24px;
+        }
+        li:last-child {
+            width: 160px;
+            border-right:1px solid #E2E2E2;
+        }
+        li:nth-child(2) {
+            flex: 1;
+        }
+        li:not(:first-child) {
+            border-bottom: 1px solid #E2E2E2;
+            font-size: 18px;
+        }
+    }
+}

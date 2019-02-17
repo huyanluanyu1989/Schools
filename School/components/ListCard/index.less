@@ -1,0 +1,103 @@
+.cardList{
+    width: 1180px;
+    margin: 20px 0;
+    > div{
+        margin-right: -20px;
+        margin-bottom: -20px;
+        overflow: auto;
+        > div{
+            margin: 0 20px 20px 0;
+            width: 280px;
+            height:280px;
+            float: left;
+            background:#fff;
+            border-radius: 8px;
+            div:first-child{
+                img{
+                    width:280px;
+                    height:158px;
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
+                    vertical-align: bottom!important;
+                }
+            }
+            div:nth-child(2){
+                img{
+                    width:20px;
+                    height:20px;
+                    border-radius: 10px;
+                }
+            }
+
+        }
+    }
+}
+:global{
+    .container{
+        display: flex;
+        justify-content: center;
+        background: #F4F4F4;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mic-boutique-Button{
+        width:52px;
+        height:18px;
+        background: #FD7A43;
+        text-align: center;
+        border-radius: 4px;
+        color: #fff;
+        line-height: 18px;
+        font-size: 10px;
+        display:none;
+    }
+    .info{
+        padding:15px 12px;
+        p{
+            color: #333333;
+            margin-bottom:12px;
+        }
+        > div:nth-child(2){
+            color: #666666;
+            display:flex;
+            justify-content: space-between;
+            border-bottom:1px solid #EEEEEE;
+            padding-bottom: 12px;
+            span{
+                font-size: 12px;
+            }
+        }
+        > div:nth-child(3){
+            display: flex;
+            align-items: center;
+            span{
+                color:#333;
+                margin-left:10px;
+            }
+        }
+
+
+        > div:nth-child(3){
+            padding-top:13px;
+        }
+    }
+    .creat{
+        border-radius: 8px;
+        border:1px solid #979797;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        p{
+            width: 100%;
+            text-align: center;
+        }
+        p, span{
+            color: #666666;
+        }
+        img{
+            width:80px!important;
+            height:72px!important;
+        }
+    }
+}

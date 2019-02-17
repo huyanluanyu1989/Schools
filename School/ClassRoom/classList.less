@@ -1,0 +1,48 @@
+.addClassModal{
+    :global{
+        form{
+            .formItem{
+                .left{
+                    //width: 85px !important;
+                }
+            }
+            .mic-Button{
+                margin: 20px auto 0;
+                display: block;
+            }
+        }
+    }
+}
+.textPanel{
+    width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    :global{
+        .mic-Button.small{
+            vertical-align: bottom;
+            margin-left:20px;
+        }
+    }
+    > div{
+        &:first-child{
+            padding: 26px 0;
+        }
+        &:nth-child(2){
+            padding: 20px 0;
+        }
+    }
+
+}
+.classStatus{
+    text-align: center;
+    background: #999;
+    line-height: 23px;
+    height:23px;
+    font-size: 12px;
+    width: 53px;
+    border-radius: 4px;
+    color: #fff!important;
+    margin-left:8px;
+}

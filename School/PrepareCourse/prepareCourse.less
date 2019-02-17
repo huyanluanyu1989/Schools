@@ -1,0 +1,100 @@
+
+:global {
+    .searchWrapper {
+        width: 382px;
+    }
+    .searchMain{
+        float:right;
+    }
+
+    .imageBg{
+        position: relative;
+        .mask {
+            position: absolute;
+            top: 0;
+            text-align: center;
+            width: 280px;
+            height: 158px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .mic-Button{
+                &.small{
+                    height:40px;
+                    border:none;
+                    box-shadow: 0 2px 4px #666;
+                }
+                &.release{
+                    border-radius: 22.5px;
+                    .mic-btn{
+                        background: #fff;
+                        color:#000;
+                        &:hover{
+                            background: #03B3B3;
+                            color:#fff;
+                        }
+                    }
+                }
+                &.released{
+                    border-radius: 0 20px 20px 0;
+                    position: absolute;
+                    left: 0;
+                    top: 12px;
+                    .mic-btn{
+                        background: #666;
+                    }
+                }
+
+            }
+        }
+        &:hover{
+            .mask{
+                background-color:rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+
+    .hide{
+        display: none!important;
+    }
+
+}
+.classInfo{
+    padding:14px 12px;
+}
+
+.textPanel{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background:#fff;
+    :global{
+        .mic-Button.small{
+            vertical-align: bottom;
+            margin-left:20px;
+        }
+    }
+    > div{
+        padding: 20px 0;
+        width:1180px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .search {
+            :global {
+                .searchWrapper {
+                    width: 382px;
+                    float: right;
+                    height: 40px;
+                    > * {
+                        height: 40px !important;
+                        line-height: 40px !important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+

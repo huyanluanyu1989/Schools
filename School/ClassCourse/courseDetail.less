@@ -1,0 +1,137 @@
+.container{
+    background:#fff;
+    .wp1{
+        background:#F4F4F4;
+        .cover{
+            img{
+                width:512px;
+                height:288px;
+                vertical-align: bottom!important;
+                border-radius: 8px;
+            }
+        }
+        > div{
+            width:1180px;
+            margin: 0 auto;
+            padding:40px 0;
+            display:flex;
+            > div:nth-child(2){
+                width: 100%;
+                margin-left:40px;
+                display: flex;
+                flex-direction: column;
+                >div:nth-child(2){
+                    margin-top:10px;
+                    display:flex;
+                    align-items: center;
+                    >div{
+                        display:flex;
+                        align-items: center;
+                    }
+                    &.title{
+                        display:flex;
+                        justify-content: space-between;
+                        :global{
+                            .mic-Button{
+                                &.default{
+                                    border-radius: 20px;
+                                    border-color: #999999;
+                                }
+                                .mic-btn{
+                                    background-color: transparent;
+                                    color: #999999;
+                                }
+                            }
+                        }
+                    }
+                    span{
+                        font-size: 24px;
+                    }
+                    img{
+                        width:18px;
+                        margin-left:20px;
+                    }
+                }
+                >div:nth-child(3){
+                    border-bottom: 1px solid #D8D8D8;
+                    padding:20px 0;
+                }
+                >div:nth-child(4){
+                    padding: 20px 0;
+                    >span{
+                        font-size: 16px;
+                    }
+                }
+                >div:nth-child(5){
+                    display: flex;
+                    justify-content: flex-end;
+                    label{
+                        margin-left:20px;
+                    }
+                }
+            }
+        }
+
+    }
+    .wp2{
+        width:1180px;
+        margin:0 auto;
+        .button{
+            border-radius: 22px;
+            margin: 30px 0 0;
+        }
+
+    }
+    .wp3{
+        display: flex;
+        justify-content: center;
+        >div{
+            width:1180px;
+            text-align: right;
+            line-height: 62px;
+            position: absolute;
+            font-size: 18px;
+        }
+    }
+}
+.nav{
+    width: 1180px;
+    margin: 20px auto 28px;
+    border-radius: 10px;
+}
+
+.edit{
+   background:url('../../../../static/images/school/edit.png') no-repeat;
+   background-size: 18px 20px;
+   width:18px;
+   height:20px;
+   margin-left:20px;
+   &:hover{
+    background:url('../../../../static/images/school/edit_hover.png') no-repeat;
+    background-size: 18px 20px;
+   }
+}
+.del{
+    background:url('../../../../static/images/school/delete.png') no-repeat;
+    background-size: 16px 18px;
+    width:16px;
+    height:18px;
+    margin-left:16px;
+    &:hover{
+        background:url('../../../../static/images/school/delete_hover.png') no-repeat;
+        background-size: 16px 18px;
+       }
+}
+:global{
+    .mic-boutique-Button{
+        width: 78px;
+        height: 24px;
+        background: #FD7A43;
+        text-align: center;
+        border-radius: 4px;
+        color: #fff;
+        line-height: 24px;
+        display:none!important;
+    }
+
+}

@@ -1,0 +1,97 @@
+.schoolInfo{
+    .banner{
+        background:#fff;
+        img{
+            margin:20px auto 50px;
+            width: 1180px;
+            height: 260px;
+            border-radius: 8px;
+        }
+        > div{
+            margin: 0 auto;
+            bottom:86px;
+            top:0;
+            width: 1180px;
+            position: relative;
+        }
+        .more{
+            right:32px;
+            top:197px;
+            position: absolute;
+            z-index: 999;
+            .btn{
+                width: 70px;
+                height: 36px;
+                background: #333;
+                color: #fff;
+                border-radius: 19px;
+                text-align: center;
+                line-height: 36px;
+            }
+        }
+    }
+    .bannerTitle{
+        position: absolute;
+        top: 194px;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        font-size: 28px;
+    }
+    .list{
+        overflow: hidden;
+        width:1180px;
+        margin:0 auto;
+        padding: 20px 0;
+        > div{
+            margin-right: -20px;
+            margin-bottom: -20px;
+            overflow: auto;
+        }
+        .box{
+            margin:0 20px 20px 0;
+            width:220px;
+            float:left;
+            > img{
+                width:220px;
+                height: 165px;
+                vertical-align: bottom!important;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            .authorPhoto{
+                position: absolute;
+                left: 10px;
+                top: -24px;
+                width:48px;
+                height: 48px;
+                z-index: 1;
+                border-radius: 24px;
+            }
+            .workInfo{
+                position: relative;
+                background:#fff;
+                display: flex;
+                flex-direction: column;
+                padding: 0 12px 12px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                > span:nth-child(2){
+                    margin-left:56px
+                }
+                > span:nth-child(3){
+                    color:#333;
+                    margin-top:10px;
+                }
+                > div:nth-child(4){
+                    display: flex;
+                    align-items: center;
+                    margin-top:20px;
+                }
+            }
+        }
+    }
+    .tab{
+        text-align: center;
+    }
+}

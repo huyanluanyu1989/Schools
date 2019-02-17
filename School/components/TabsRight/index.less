@@ -1,0 +1,31 @@
+.useGuide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 35px;
+    flex-direction: column;
+    > div{
+        width:1180px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+        > div{
+            position: absolute;
+            right:0;
+            display: flex;
+            align-items: center;
+            top: 0;
+            height: 60px;
+            >div{
+                display:flex;
+                align-items: center;
+            }
+        }
+    }
+    img{
+        margin-right:6px;
+        width: 16px;
+        height: 16px;
+    }
+}
